@@ -1,7 +1,6 @@
-.text--0- {
-  padding-left: 80px;
+.search-box {
+  padding-left: 40px;
   padding-top: 30px;
-  padding-bottom: 30px;
   width: 228px;
   height: 36px;
   color: #000000;
@@ -9,62 +8,6 @@
   font-family: UTM Neo Sans Intel, "Bold";
   font-weight: 700;
   text-align: center;
-  vertical-align: center;
-}
-
-.search {
-  margin-left: 20px ;
-    height:28px;
-    background-color:#def2f1;
-    border-radius: 4px;
-}
-.fa-pen{
-  font-size: 40px; 
-}
-
-
-.textnv1-right{
-  position: absolute;  
-  line-height: 50px;
-  left: 890px;
-  padding-top:140px;
-  margin:auto;
-  width: 1000px;
-  height: 10px;
-  color: #2b7a77;
-  font-size: 30px;
-  font-family: UTM Neo Sans Intel, "Regular";
-  font-weight: 400;
-  text-align: left;
-  vertical-align: center;
-}
-.textnv1-left {
-  position: absolute;
-  left: 600px;
-  padding-top:140px;
-  line-height: 50px;
-  margin:auto;
-  width: 1000px;
-  height: 10px;
-  color: #525252;
-  font-size: 30px;
-  font-family: UTM Neo Sans Intel, "Bold";
-  font-weight: 700;
-  text-align: left;
-  vertical-align: center;
-}
-
-.text-0-1-0 {
-  position: absolute;
-  left: 600px;
-  margin-top:60px;
-  width: 650px;
-  height: 80px;
-  color: #2b7a77;
-  font-size: 50px;
-  font-family: UTM Neo Sans Intel, "Bold";
-  font-weight: 700;
-  text-align: left;
   vertical-align: center;
 }
 
@@ -83,7 +26,70 @@
   cursor: pointer;
   border-radius: 4px;
 }
-.button-sotr {
+
+.search-input {
+  margin-right: 20px;
+  height: 28px;
+  margin-left:80px;
+  background-color: #def2f1;
+  border-radius: 4px;
+}
+
+.fa-pen{
+  font-size: 40px; 
+}
+
+.employee-card {
+  display: flex;
+}
+
+.employee-card .right {
+  position: absolute;  
+  line-height: 50px;
+  left: 890px;
+  padding-top:140px;
+  margin:auto;
+  /* width: 1000px; */
+  height: 10px;
+  color: #2b7a77;
+  font-size: 30px;
+  font-family: UTM Neo Sans Intel, "Regular";
+  font-weight: 400;
+  text-align: left;
+  vertical-align: center;
+}
+
+.employee-card .left {
+  position: absolute;
+  left: 600px;
+  padding-top:140px;
+  line-height: 50px;
+  margin:auto;
+  /* width: 1000px; */
+  height: 10px;
+  color: #525252;
+  font-size: 30px;
+  font-family: UTM Neo Sans Intel, "Bold";
+  font-weight: 700;
+  text-align: left;
+  vertical-align: center;
+}
+
+.name {
+  position: absolute;
+  left: 600px;
+  margin-top:60px;
+  width: 650px;
+  height: 80px;
+  color: #2b7a77;
+  font-size: 50px;
+  font-family: UTM Neo Sans Intel, "Bold";
+  font-weight: 700;
+  text-align: left;
+  vertical-align: center;
+}
+
+.button-page {
   background-color:#def2f1;
   border: none;
   top:50%;
