@@ -1,3 +1,4 @@
+/* search section */
 .search-box {
   padding-left: 40px;
   padding-top: 30px;
@@ -12,7 +13,7 @@
 }
 
 .search-button {
-  background-color:#2b7a77;
+  background-color: #2b7a77;
   border: none;
   color: #fff;
   padding: 8px 32px;
@@ -30,71 +31,87 @@
 .search-input {
   margin-right: 20px;
   height: 28px;
-  margin-left:80px;
+  margin-left: 80px;
   background-color: #def2f1;
   border-radius: 4px;
 }
 
-.fa-pen{
-  font-size: 40px; 
+.fa-pen {
+  font-size: 40px;
+}
+
+
+/* card section */
+.avatar {
+  background: #dddddd;
+  border-radius: 50%;
+  border: 10px solid #2b7a77;
+  height: 390px;
+  margin: 60px;
+  padding: 0;
+  text-align: center;
+  width: 390px;
+}
+
+.avatar img {
+  height: 390px;
+  width: 390px;
+  border-radius: 50%;
+  margin: auto;
 }
 
 .employee-card {
   display: flex;
 }
 
+.infor {
+  padding-top: 40px;
+}
+
+.infor-content {
+  display: flex;
+  justify-content: space-between;
+}
+
 .employee-card .right {
-  position: absolute;  
   line-height: 50px;
-  left: 890px;
-  padding-top:140px;
-  margin:auto;
-  /* width: 1000px; */
   height: 10px;
   color: #2b7a77;
   font-size: 30px;
   font-family: UTM Neo Sans Intel, "Regular";
   font-weight: 400;
-  text-align: left;
-  vertical-align: center;
 }
 
 .employee-card .left {
-  position: absolute;
-  left: 600px;
-  padding-top:140px;
   line-height: 50px;
-  margin:auto;
-  /* width: 1000px; */
   height: 10px;
   color: #525252;
   font-size: 30px;
   font-family: UTM Neo Sans Intel, "Bold";
   font-weight: 700;
-  text-align: left;
-  vertical-align: center;
 }
 
 .name {
-  position: absolute;
-  left: 600px;
-  margin-top:60px;
   width: 650px;
   height: 80px;
   color: #2b7a77;
   font-size: 50px;
   font-family: UTM Neo Sans Intel, "Bold";
   font-weight: 700;
-  text-align: left;
-  vertical-align: center;
+}
+
+/* page number section */
+.row-pgnumber {
+  justify-content: center;
+  display: flex;
 }
 
 .button-page {
-  background-color:#def2f1;
+  background-color: #def2f1;
   border: none;
-  top:50%;
-  left:50%;
-  margin:0 auto;
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
   color: #000;
   text-align: center;
   padding: 8px 8px;
