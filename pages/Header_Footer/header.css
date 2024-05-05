@@ -72,6 +72,9 @@ body {
   min-width: initial;
   padding: 0.5rem;
 }
+li {
+  list-style: none;
+}
 
 
 /* 
@@ -79,7 +82,7 @@ body {
 ** Tweak as per your needs **
 */
 .brand {
-    font-weight: bold;
+  font-weight: bold;
     font-size: 20px; }
   
   .site-header {
