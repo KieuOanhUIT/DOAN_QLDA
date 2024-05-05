@@ -6,7 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="QLNV.css" />
   <title>Quản lý nhân viên</title>
+  <link rel="stylesheet" href="/pages/Header_Footer/header.css" />
+  <link rel="stylesheet" href="/pages/Header_Footer/footer.css" />
+
+  <script>
+    window.onload = function () {
+      // Include Header
+      fetch("/pages/Header_Footer/header.html")
+        .then(response => response.text())
+        .then(data => document.querySelector("header").innerHTML = data);
+
+      // Include Footer
+      fetch("/pages/Header_Footer/footer.html")
+        .then(response => response.text())
+        .then(data => document.querySelector("footer").innerHTML = data);
+    }
+  </script>
 </head>
+
+<header id="header"></header>
 
 <body>
   <div class="search-box">Tìm kiếm nhân viên</div>
@@ -20,7 +38,7 @@
       <img src="https://i.pinimg.com/564x/12/fe/2d/12fe2d285f543778b31f4893cf4c22ff.jpg" />
     </div>
     <div class="infor">
-      <div class="name">TRẦN THỊ KIỀU OANH <i class="fa fa-pen" style="color: #2b7a77;"></i></div>
+      <div class="name">TRẦN THỊ KIỀU OANH <a href="/pages/ChinhSuaNV/ChinhSuaNV.html"><i class="fa fa-pen" style="color: #2b7a77;"></i></a></div>
       <div class="infor-content">
         <div class="left">
           <div>Mã nhân viên</div>
@@ -50,7 +68,7 @@
       <img src="https://i.pinimg.com/564x/12/fe/2d/12fe2d285f543778b31f4893cf4c22ff.jpg" />
     </div>
     <div class="infor">
-      <div class="name">TRẦN THỊ KIỀU OANH <i class="fa fa-pen" style="color: #2b7a77;"></i></div>
+      <div class="name">TRẦN THỊ KIỀU OANH <a href="/pages/ChinhSuaNV/ChinhSuaNV.html"><i class="fa fa-pen" style="color: #2b7a77;"></i></a></div>
       <div class="infor-content">
         <div class="left">
           <div>Mã nhân viên</div>
@@ -80,7 +98,7 @@
       <img src="https://i.pinimg.com/564x/12/fe/2d/12fe2d285f543778b31f4893cf4c22ff.jpg" />
     </div>
     <div class="infor">
-      <div class="name">TRẦN THỊ KIỀU OANH <i class="fa fa-pen" style="color: #2b7a77;"></i></div>
+      <div class="name">TRẦN THỊ KIỀU OANH <a href="/pages/ChinhSuaNV/ChinhSuaNV.html"><i class="fa fa-pen" style="color: #2b7a77;"></i></a></div>
       <div class="infor-content">
         <div class="left">
           <div>Mã nhân viên</div>
@@ -104,6 +122,36 @@
     </div>
   </div>
   <hr width="80%" size="3px" text-align="center" color="#2b7a77" />
+
+  <div class="employee-card">
+    <div class="avatar">
+      <img src="https://i.pinimg.com/564x/12/fe/2d/12fe2d285f543778b31f4893cf4c22ff.jpg" />
+    </div>
+    <div class="infor">
+      <div class="name">TRẦN THỊ KIỀU OANH <a href="/pages/ChinhSuaNV/ChinhSuaNV.html"><i class="fa fa-pen" style="color: #2b7a77;"></i></a></div>
+      <div class="infor-content">
+        <div class="left">
+          <div>Mã nhân viên</div>
+          <div>Phòng ban</div>
+          <div>Chức vụ</div>
+          <div>Số điện thoại</div>
+          <div>Địa chỉ</div>
+          <div>Ngày sinh</div>
+          <div>Ngày vào làm</div>
+        </div>
+        <div class="right">
+          <div>001</div>
+          <div>Nhân sự</div>
+          <div>Trưởng phòng</div>
+          <div>0864213579</div>
+          <div>KTX Khu A, ĐHQG - HCM</div>
+          <div>07/08/2004</div>
+          <div>08/07/2024</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <hr width="80%" size="3px" text-align="center" color="#2b7a77" /> -->
 
   <div class="row-pgnumber">
     <button class="button-page">1</button>
@@ -111,5 +159,7 @@
     <button class="button-page">3</button>
   </div>
 </body>
+
+<footer id="footer"></footer>
 
 </html>
