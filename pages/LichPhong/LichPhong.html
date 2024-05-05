@@ -6,8 +6,25 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="LichPhong.css" />
-  <script src="pages\link.js"></script>
+  <link rel="stylesheet" href="/pages/Header_Footer/header.css" />
+  <link rel="stylesheet" href="/pages/Header_Footer/footer.css" />
+
+  <script>
+    window.onload = function () {
+      // Include Header
+      fetch("/pages/Header_Footer/header.html")
+        .then(response => response.text())
+        .then(data => document.querySelector("header").innerHTML = data);
+
+      // Include Footer
+      fetch("/pages/Header_Footer/footer.html")
+        .then(response => response.text())
+        .then(data => document.querySelector("footer").innerHTML = data);
+    }
+  </script>
 </head>
+
+<header id="header"></header>
 
 <body>
   <div class="label">Thời gian</div>
@@ -28,7 +45,7 @@
       <th>Thứ 5</th>
       <th>Thứ 6</th>
     </tr>
-    <tr> 
+    <tr>
       <td>1</td>
       <td>8h00 - 11h30</td>
       <td></td>
@@ -37,7 +54,7 @@
       <td>Phỏng vấn bảo vệ</td>
       <td></td>
     </tr>
-    <tr> 
+    <tr>
       <td>2</td>
       <td>14h00 - 16h30</td>
       <td>Họp phòng chiến lược</td>
@@ -46,7 +63,7 @@
       <td>Seminar</td>
       <td></td>
     </tr>
-    <tr> 
+    <tr>
       <td>3</td>
       <td>8h00 - 11h30</td>
       <td></td>
@@ -55,7 +72,7 @@
       <td></td>
       <td>Giao lưu công ty ToFu</td>
     </tr>
-    <tr> 
+    <tr>
       <td>4</td>
       <td>14h00 - 16h30</td>
       <td></td>
@@ -64,7 +81,7 @@
       <td></td>
       <td></td>
     </tr>
-    <tr> 
+    <tr>
       <td>5</td>
       <td>8h00 - 11h30</td>
       <td>Liên hoan công ty</td>
@@ -74,6 +91,9 @@
       <td></td>
     </tr>
   </table>
+
 </body>
+
+<footer id="footer"></footer>
 
 </html>
