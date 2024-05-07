@@ -1,0 +1,69 @@
+body {
+    font-family: 'Ubuntu', sans-serif; /* Sử dụng font Ubuntu */
+}
+
+.search-container {
+    position: absolute;
+    left: 207px;
+    top: 1196px;
+    width: 1023px;
+    height: 307px;
+    border-radius: 30px;
+    background-color: #DEF2F1; /* Màu nền của khung tìm kiếm */
+    padding: 20px;
+    box-sizing: border-box; /* Đảm bảo padding không tăng kích thước khung tìm kiếm */
+    position: relative; /* Thiết lập position là relative để xác định vị trí của search-text bên trong search-container */
+}
+
+
+.search-text {
+    position: absolute;
+    top: 30px; /* Đặt vị trí theo chiều dọc lên trên 55px so với phần tử cha */
+    left: 50%; /* Đặt vị trí theo chiều ngang giữa search-box */
+    transform: translateX(-50%); /* Dịch chuyển văn bản "TÌM KIẾM" về giữa */
+    font-family: 'Ubuntu', sans-serif; /* Sử dụng font Ubuntu */
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 1;
+    color: ; /* Màu chữ của văn bản "TÌM KIẾM" */
+}
+
+.search-box {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    width: 596px;
+    height: 110px;
+    border-radius: 50px;
+    background-color: #2B7A77; /* Màu nền của khung tìm kiếm */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.search-input {
+    width: 70%; /* Chiều rộng của input là 70% để lấp đầy phần nội dung trong search-box */
+    height: 70px;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    background-color: transparent; /* Để làm trong suốt phần input */
+    outline: none;
+    font-family: 'Ubuntu', sans-serif; /* Sử dụng font Ubuntu */
+    color: white; /* Màu chữ của input là trắng */
+}
+
+.search-text1 {
+    position: absolute;
+    top: 70%; /* Đặt vị trí theo chiều dọc ở giữa */
+    left: 50%; /* Đặt vị trí theo chiều ngang ở giữa */
+    transform: translate(-50%, -50%); /* Dịch chuyển văn bản về giữa */
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 1;
+    color: white;
+}
