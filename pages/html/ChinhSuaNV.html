@@ -4,20 +4,20 @@
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="ChinhSuaNV.css" />
+  <link rel="stylesheet" href="/pages/css/ChinhSuaNV.css" />
   <title>Quản lý nhân viên</title>
-  <link rel="stylesheet" href="/pages/Header_Footer/header.css" />
-  <link rel="stylesheet" href="/pages/Header_Footer/footer.css" />
+  <link rel="stylesheet" href="/pages/css/header.css" />
+  <link rel="stylesheet" href="/pages/css/footer.css" />
 
   <script>
     window.onload = function () {
       // Include Header
-      fetch("/pages/Header_Footer/header.html")
+      fetch("/pages/html/header.html")
         .then(response => response.text())
         .then(data => document.querySelector("header").innerHTML = data);
 
       // Include Footer
-      fetch("/pages/Header_Footer/footer.html")
+      fetch("/pages/html/footer.html")
         .then(response => response.text())
         .then(data => document.querySelector("footer").innerHTML = data);
     }
