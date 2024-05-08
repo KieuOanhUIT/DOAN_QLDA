@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'UTM Neo Sans Intel';
+  src: url('utmmoi3.ttf') format('truetype'); /* Đường dẫn tới tệp font */
+  /* Bổ sung các định dạng tệp font khác nếu cần */
+}
+
+/* Áp dụng font cho toàn bộ trang */
+body {
+  font-family: 'UTM Neo Sans Intel', sans-serif;
+}
+
+/* Sử dụng font cho các phần tử cụ thể */
+.textbox,
+.textbox2,
+.textbox3,
+.textbox4 {
+  font-family: 'UTM Neo Sans Intel', sans-serif; /* Sử dụng font này cho các phần tử */
+}
+
+
+.container {
+  width: 1440px;
+  height: 2184px;
+  margin: 0 auto; /* Canh giữa trang */
+  background-color: #ffffff; /* Màu nền của trang */
+  position: relative; /* Cần thiết để sử dụng vị trí tuyệt đối cho phần tử con */
+}
+
+.text {
+  position: absolute; /* Đặt vị trí tuyệt đối */
+  top: 150px; /* Vị trí y */
+  left: 665px; /* Vị trí x */
+  font-size: 64px; /* Kích thước chữ */
+}
+
+.line {
+  position: absolute;
+  left: 610px;
+  top: 190px;
+  width: 768.11px;
+  height: 0;
+  border-top: 1px solid black;
+  transform-origin: left top;
+  transform: rotate(90deg);
+}
+
+.line2, .linee, .line3, .line4, .line5, .line6 {
+  position: absolute;
+  left: 110px;
+  width: 500px;
+  height: 0;
+  border-top: 1px solid black;
+}
+
+.line2 {
+  top: 281px;
+}
+
+.linee {
+  top: 231px;
+}
+
+.line3 {
+  top: 331px;
+}
+
+.line4 {
+  top: 381px;
+}
+
+.line5 {
+  top: 431px;
+}
+
+.line6 {
+  top: 481px;
+}
+
+.textbox {
+  position: absolute;
+  left: 110px;
+  top: 181px;
+  width: 490px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 50px;
+}
+
+.textbox2 {
+  position: absolute;
+  left: 110px;
+  top: 231px;
+  width: 401px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 50px;
+}
+
+.textbox3 {
+  position: absolute;
+  left: 110px;
+  top: 281px;
+  width: 401px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 50px;
+}
+
+.textbox4 {
+  position: absolute;
+  left: 110px;
+  top: 331px;
+  width: 401px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 50px;
+}
+
+.textbox5 {
+  position: absolute;
+  left: 110px;
+  top: 381px;
+  width: 401px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 50px;
+}
+
+.textbox6 {
+  position: absolute;
+  left: 110px;
+  top: 431px;
+  width: 401px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 50px;
+}
+
+.textbox7 {
+  position: absolute;
+  left: 665px;
+  top: 300px;
+  width: 590px;
+  height: 1834px;
+  font-size: 24px;
+  font-weight: regular;
+  text-align: left;
+  padding: 20px;
+  overflow-y: auto;
+}
