@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slideshow</title>
-    <link rel="stylesheet" href="trangchu.css">
-    <link rel="stylesheet" href="/pages/Header_Footer/header.css">
-    <link rel="stylesheet" href="/pages/Header_Footer/footer.css">
+    <link rel="stylesheet" href="/pages/css/homePage.css">
+    <link rel="stylesheet" href="/pages/css/header.css" />
+    <link rel="stylesheet" href="/pages/css/footer.css" />
 </head>
 
 <body>
@@ -70,7 +70,7 @@
     </main>
     </main>
 
-    <script src="trangchu.js"></script>
+    <script src="/pages/js/trangchu copy.js"></script>
 
     <footer>
         <!-- Include Footer -->
@@ -79,12 +79,12 @@
     <script>
         window.onload = function () {
             // Include Header
-            fetch("/pages/Header_Footer/header.html")
+            fetch("/pages/html/header.html")
                 .then(response => response.text())
                 .then(data => document.querySelector("header").innerHTML = data);
 
             // Include Footer
-            fetch("/pages/Header_Footer/footer.html")
+            fetch("/pages/html/footer.html")
                 .then(response => response.text())
                 .then(data => document.querySelector("footer").innerHTML = data);
         }
