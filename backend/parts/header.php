@@ -10,6 +10,8 @@
   <link rel="stylesheet" type="text/css" href="/DOAN_WEBSITE/pages/css/footer.css" />
   <link rel="stylesheet" type="text/css" href="/DOAN_WEBSITE/pages/css/ChinhSuaNV.css" />  
   <link rel="stylesheet" type="text/css" href="/DOAN_WEBSITE/pages/css/QLNV.css" />  
+  <link rel="stylesheet" type="text/css" href="/DOAN_WEBSITE/pages/css/DKyPhong.css" />  
+  <link rel="stylesheet" type="text/css" href="/DOAN_WEBSITE/pages/css/LichPhong.css" />  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>

@@ -1,24 +1,20 @@
 <?php
 include 'header.php';
+include 'C:\xampp\htdocs\DOAN_WEBSITE\database\database.php';
+
+//include 'C:\xampp\htdocs\DOAN_WEBSITE\backend\NhanVienClass.php';
 ?>
 
 <?php
-<?php
-$servername = "localhost";
-$username = "root";
-$password = "root";
-$databaseName = "web";
-// Create connection
-$conn = new mysqli($servername, $username, $password, $databaseName);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-echo "Connected successfully";
-?>
+$database = new Database;
+
+// $nv = new NhanVienCLass();
+// $nv->getEmployeeInfo();
 ?>
 
-<div class="employee-card">
+<body>
+
+  <div class="employee-card">
     <div class="avatar">
       <img src="https://i.pinimg.com/564x/12/fe/2d/12fe2d285f543778b31f4893cf4c22ff.jpg" />
     </div>
@@ -49,12 +45,13 @@ echo "Connected successfully";
   <div class="row-button">
     <button class="button">Hủy</button>
     <button class="button">Cập nhật</button>
-  </div>f
+  </div>
 
-<?php
-include 'footer.php';
-?>
-    
 </body>
 
+<footer>
+  <?php
+    include 'footer.php';
+  ?>
+</footer>
 </html>
