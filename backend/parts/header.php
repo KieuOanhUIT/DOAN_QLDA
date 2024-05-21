@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="/DOAN_WEBSITE/pages/css/header.css" />
   <link rel="stylesheet" type="text/css" href="/DOAN_WEBSITE/pages/css/footer.css" />
   <link rel="stylesheet" type="text/css" href="/DOAN_WEBSITE/pages/css/ChinhSuaNV.css" />  
+  <link rel="stylesheet" type="text/css" href="/DOAN_WEBSITE/pages/css/QLNV.css" />  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -26,8 +27,9 @@
           <li class="nav__item"><a href="#">Trang chủ</a></li>
           <li class="nav__item"><a href="#">Quy định</a></li>
           <li class="nav__item"><a href="#">Xử lý yêu cầu</a></li>
-          <li class="nav__item"><a href="/pages/LichPhong/LichPhong.html">Lịch</a></li>
-          <li class="nav__item"><a href="/pages/QLNV/QLNV.html">Quản lý nhân viên</a></li>
+          <li class="nav__item"><a href="/DOAN_WEBSITE/backend/parts/LichPhong.php">Lịch phòng</a></li>
+          <li class="nav__item"><a href="/DOAN_WEBSITE/backend/parts/DKyPhong.php">Đăng ký phòng</a></li>
+          <li class="nav__item"><a href="/DOAN_WEBSITE/backend/parts/QLNV.php">Quản lý nhân viên</a></li>
           <li class="nav__item"><a href="#">Nhân viên</a></li>
         </ul>
       </nav>
