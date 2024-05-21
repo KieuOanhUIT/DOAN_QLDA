@@ -1,5 +1,5 @@
 <?php
-include '/DOAN_WEBSITE/database/config.php';
+include 'config.php';
 class Database{
     public $servername = servername;
     public $username = username;
@@ -8,7 +8,7 @@ class Database{
     public $conn;
 
     public function __construct(){
-        this->connect();
+        $this->connect();
     }
 
     public function connect(){
