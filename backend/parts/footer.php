@@ -1,17 +1,30 @@
-<footer>
-        <!-- Include Footer -->
-        <div id="footer"></div>
-    </footer>
-    <script>
-        window.onload = function () {
-            // Include Header
-            fetch("/pages/html/header.html")
-                .then(response => response.text())
-                .then(data => document.querySelector("header").innerHTML = data);
+<!DOCTYPE html>
+<html lang="en">
 
-            // Include Footer
-            fetch("/pages/html/footer.html")
-                .then(response => response.text())
-                .then(data => document.querySelector("footer").innerHTML = data);
-        }
-    </script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<!-- Footer Start -->
+<footer>
+  <div class="footer">
+    <div class="row">
+      <a href="#"><i class="fa fa-envelope"></i></a>
+      <a href="#"><i class="fa fa-phone"></i></a>
+    </div>
+
+    <div class="row">
+      <p >Công ty Sản xuất - Thương mại Tufo</p>
+    </div>
+    <div class="row">
+      <p>Địa chỉ: 633 Nguyễn Đình Chiểu, P2, Q3, TP.HCM, Ho Chi Minh City, Vietnam</p>
+    </div>
+    <div class="row">
+      Copyright © 2024 TUFO - All rights reserved
+    </div>
+  </div>
+</footer>
+
+  <!-- Footer End -->
