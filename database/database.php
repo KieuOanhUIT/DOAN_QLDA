@@ -18,4 +18,20 @@ class Database{
         }
         //echo "Connected successfully </br>";
     }
+
+    public function selectAll_Phong($query){
+        $result = $this->conn->query($query);
+        return $result;
+    }
+
+    public function selectByNgay($query){
+        $result = $this->conn->query($query);
+        return $result;
+    }
+
+    public function selectAll_NV($query){
+        $result = $this->conn->query($query);
+        return $result;
+    }
+
 }
