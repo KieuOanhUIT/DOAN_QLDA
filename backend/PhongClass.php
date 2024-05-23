@@ -14,8 +14,7 @@ class PhongCLass{
     }
 
     public function selectByNgay($ngay){
-        $date=$ngay['ngay'];
-        $sql = "SELECT * FROM phong WHERE NGAY = '$date'";
+        $sql = "SELECT * FROM phong WHERE NGAY = '$ngay'";
         $result = $this->Database->selectByNgay($sql);
         return $result;
     }
