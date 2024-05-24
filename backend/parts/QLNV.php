@@ -1,14 +1,15 @@
 <?php
 include 'header.php';
 include 'C:\xampp\htdocs\DOAN_WEBSITE\backend\NhanVienClass.php';
-$NhanVienClass = new NhanVienClass;
+$NhanVienClass = new NhanVienClass();
 ?>
 <?php
   $selectAll=$NhanVienClass->selectAll();
 
   if(isset($_POST['search'])){
-    $nv = new NhanVienCLass;
+    //$resultID=array();
     $txtsearch = $_POST['txtsearch'];
+    $nv = new NhanVienClass;
     $select = $nv->selectByMANV($txtsearch);
     if($select){
       $resultID = $select->fetch_assoc();
@@ -18,7 +19,7 @@ $NhanVienClass = new NhanVienClass;
 
 <body>
   <div class="search-box">Tìm kiếm nhân viên</div>
-  <form>
+  <form action="" method="post">
     <input class="search-input" type="text" name="txtsearch" placeholder="Nhập mã nhân viên" />
     <button class="search-button" type ="submit" name="search">Tìm kiếm</button>
     <div class="employee-card">

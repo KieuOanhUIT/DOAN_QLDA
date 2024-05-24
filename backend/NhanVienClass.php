@@ -21,15 +21,6 @@ class NhanVienCLass{
     }
 
     //hàm tìm kiếm nhân viên theo mã nhân viên
-    public function searchEmployee($manv) {
-    global $conn;
-    $st = $conn->prepare("SELECT MANV, TENPB, CHUCVU, SDT, DIACHI, NGSINH, NGVL FROM nhanvien WHERE MANV = ?");
-    $st->bind_param("s", $manv);
-    $st->execute();
-    $result = $st->get_result();
-    return $result->fetch_assoc(); 
-    }
-
     public function selectByMANV($manv){
         $sql = "SELECT * FROM nhanvien WHERE manv = '$manv'";
         $result = $this->Database->selectByMANV($sql);
