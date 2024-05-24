@@ -5,16 +5,54 @@ $NhanVienClass = new NhanVienClass;
 ?>
 <?php
   $selectAll=$NhanVienClass->selectAll();
+
+  if(isset($_POST['search'])){
+    $nv = new NhanVienCLass;
+    $txtsearch = $_POST['txtsearch'];
+    $select = $nv->selectByMANV($txtsearch);
+    if($select){
+      $resultID = $select->fetch_assoc();
+    }
+  }
 ?>
 
 <body>
   <div class="search-box">Tìm kiếm nhân viên</div>
   <form>
-    <input class="search-input" type="text" placeholder="Nhập mã nhân viên" />
-    <button class="search-button">Tìm kiếm</button>
+    <input class="search-input" type="text" name="txtsearch" placeholder="Nhập mã nhân viên" />
+    <button class="search-button" type ="submit" name="search">Tìm kiếm</button>
+    <div class="employee-card">
+    <div class="avatar">
+      <img src="https://i.pinimg.com/564x/12/fe/2d/12fe2d285f543778b31f4893cf4c22ff.jpg" />
+    </div>
+    <div class="infor">
+      <div class="name"><?php echo $resultID['TENNV']?><a href="/DOAN_WEBSITE/backend/parts/ChinhSuaNV.php"><i class="fa fa-pen" style="color: #2b7a77;"></i></a></div>
+      <div class="infor-content">
+        <div class="left">
+          <div>Mã nhân viên</div>
+          <div>Phòng ban</div>
+          <div>Chức vụ</div>
+          <div>Số điện thoại</div>
+          <div>Địa chỉ</div>
+          <div>Ngày sinh</div>
+          <div>Ngày vào làm</div>
+        </div>
+        <div class="right">
+          <div><?php echo $resultID['MANV'] ?></div>
+          <div><?php echo $resultID['MAPB'] ?></div>
+          <div><?php echo $resultID['CHUCVU'] ?></div>
+          <div><?php echo $resultID['SDT'] ?></div>
+          <div><?php echo $resultID['GIOITINH'] ?></div>
+          <div><?php echo $resultID['NGSINH'] ?></div>
+          <div><?php echo $resultID['NGVL'] ?></div>
+        </div>
+      </div>
+    </div>
+  </div>
   </form>
   <?php
-      if($selectAll->num_rows >0){while($result = $selectAll->fetch_assoc()){
+      if($selectAll->num_rows >0){
+        while($result = $selectAll->fetch_assoc()){
     ?>
   <div class="employee-card">
     <div class="avatar">
@@ -47,7 +85,8 @@ $NhanVienClass = new NhanVienClass;
   <hr width="80%" size="3px" text-align="center" color="#2b7a77" />
 
   <?php
-      }}
+      }
+    }
     ?>
 
   <!-- <hr width="80%" size="3px" text-align="center" color="#2b7a77" /> -->

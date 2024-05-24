@@ -6,15 +6,15 @@ $phongClass = new PhongClass();
 <?php
   $selectAll=$phongClass->selectAll();
 
-   if(isset($_POST['btn_xem'])){
+  if(isset($_POST['btn_xem'])){
     $ngay = new PhongCLass;
     $ngayy = $_POST['ngay'];
     $getLich = $ngay->selectByNgay($ngayy);
     if($getLich){
       $resultID = $getLich->fetch_assoc();
     }
-   }
-   else if(isset($_POST['btn'])){
+  }
+  else if(isset($_POST['btn'])){
     $manv=$_POST['manv'];
     $noidung=$_POST['noidung'];
     $map=$_POST['map'];

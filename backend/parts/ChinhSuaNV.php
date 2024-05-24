@@ -6,6 +6,18 @@ $NhanVienClass = new NhanVienClass;
 <?php
   $selectAll=$NhanVienClass->selectAll();
 ?>
+<?php
+  if(isset($_POST['capnhat'])){
+    $manv=$_POST['txtmanv'];
+    $mapb=$_POST['txtmapb'];
+    $chucvu=$_POST['txtchucvu'];
+    $sdt=$_POST['txtsdt'];
+    $gioitinh=$_POST['txtgioitinh'];
+    $ngaysinh=$_POST['txtngaysinh'];
+    $ngayvaolam=$_POST['txtngayvaolam'];
+    $update = $NhanVienClass->updateNV($manv, $gioitinh, $sdt, $ngaysinh, $ngayvaolam, $chucvu, $mapb);
+  }
+?>
 
 <body>
 
@@ -30,13 +42,15 @@ $NhanVienClass = new NhanVienClass;
           <div>Ngày vào làm</div>
         </div>
         <div class="right">
-          <div><?php echo $result['MANV'] ?></div>
-          <div><?php echo $result['MAPB'] ?></div>
-          <div><?php echo $result['CHUCVU'] ?></div>
-          <div><?php echo $result['SDT'] ?></div>
-          <div><?php echo $result['GIOITINH'] ?></div>
-          <div><?php echo $result['NGSINH'] ?></div>
-          <div><?php echo $result['NGVL'] ?></div>
+         
+          <input type=text name="txtmanv" value="<?php echo $result['MANV']; ?>" id="" readonly="true">
+          <input type=text name="txtmapb" value="<?php echo $result['MAPB'] ?>">
+          <input type=text name="txtchucvu" value="<?php echo $result['CHUCVU'] ?>">
+          <input type=text name="txtsdt" value="<?php echo $result['SDT'] ?>">
+          <input type=text name="txtgioitinh" value="<?php echo $result['GIOITINH'] ?>">
+          <input type=text name="txtngsinh" value="<?php echo $result['NGSINH'] ?>">
+          <input type=text name="txtngvl" value="<?php echo $result['NGVL'] ?>">
+
         </div>
       </div>
     </div>
@@ -45,8 +59,8 @@ $NhanVienClass = new NhanVienClass;
       }
     ?>
   <div class="row-button">
-    <button class="button">Hủy</button>
-    <button class="button">Cập nhật</button>
+  <a href="/DOAN_WEBSITE/backend/parts/QLNV.php"><button class="button"name="huy">Hủy</button></a>
+    <button class="button" type = "submit" name="capnhat" id="">Cập nhật</button>
   </div>
   </form>
 

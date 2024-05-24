@@ -6,19 +6,21 @@ class NhanVienCLass{
     public function __construct(){
         $this->Database = new Database;
     }
+
+    //hàm show tất cả nhân viên
     public function selectAll(){
         $sql = "SELECT * FROM nhanvien";
         $result = $this->Database->selectAll_NV($sql);
         return $result;
     }
     // Hàm cập nhật thông tin nhân viên
-    // public function updateEmployee($manv, $gioitinh, $sdt, $ngaysinh, $ngayvaolam, $chucvu, $maphongbanpb)
-    // $st = $conn->prepare("UPDATE nhanvien SET GIOITINH=?, SDT=?, NGSINH=?, NGVL=?, CHUCVU=?, MAPB=? WHERE MANV=?");
-    // $st->bind_param("ssssss", $manv, $gioitinh, $sdt, $ngaysinh, $ngayvaolam, $chucvu, $maphongbanpb);
-    // $st->execute();
-    // $st->close();
-    // }
+    public function updateNV($manv, $gioitinh, $sdt, $ngaysinh, $ngayvaolam, $chucvu, $mapb){
+        $sql = "UPDATE nhanvien SET gioitinh='$gioitinh',sdt='$sdt',ngsinh='$ngaysinh', ngvl='$ngayvaolam', chucvu='$chucvu', mapb='$mapb' WHERE manv='$manv'";
+        $result = $this -> Databse->updateNV($sql);
+        return $result;
+    }
 
+    //hàm tìm kiếm nhân viên theo mã nhân viên
     public function searchEmployee($manv) {
     global $conn;
     $st = $conn->prepare("SELECT MANV, TENPB, CHUCVU, SDT, DIACHI, NGSINH, NGVL FROM nhanvien WHERE MANV = ?");
@@ -26,14 +28,12 @@ class NhanVienCLass{
     $st->execute();
     $result = $st->get_result();
     return $result->fetch_assoc(); 
-  }
-  //$conn->close();
-    public function show_nhanvien(){
-    $query = "SELECT * FROM nhanvien";
-        $result = $this -> Database -> select($query);
-        return $result;
-        
     }
 
+    public function selectByMANV($manv){
+        $sql = "SELECT * FROM nhanvien WHERE manv = '$manv'";
+        $result = $this->Database->selectByMANV($sql);
+        return $result;
+    }
 }
 ?>
