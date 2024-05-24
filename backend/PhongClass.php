@@ -18,5 +18,15 @@ class PhongCLass{
         $result = $this->Database->selectByNgay($sql);
         return $result;
     }
+
+    public function insertDKy($manv, $noidung, $map){
+        // $manv=$data['manv'];
+        // $map=$data['map'];
+        // $noidung=$data['noidung'];
+        $query = "INSERT INTO ctdkphong (manv, map, noidung, trangthai)
+        VALUES ('$manv','$map','$noidung','Đang chờ xử lý')";
+        $result = $this -> Database-> insertDKy($query);
+        return $result;
+    }
 }
 ?>

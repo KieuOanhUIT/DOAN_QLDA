@@ -34,4 +34,8 @@ class Database{
         return $result;
     }
 
+    public function insertDKy($query){
+        $result = $this->conn->query($query);
+        return $result;
+    }
 }

@@ -6,7 +6,7 @@ $phongClass = new PhongClass();
 <?php
   $selectAll=$phongClass->selectAll();
 
-   if($_SERVER['REQUEST_METHOD']=='POST'){
+   if(isset($_POST['btn_xem'])){
     $ngay = new PhongCLass;
     $ngayy = $_POST['ngay'];
     $getLich = $ngay->selectByNgay($ngayy);
@@ -14,7 +14,17 @@ $phongClass = new PhongClass();
       $resultID = $getLich->fetch_assoc();
     }
    }
-
+   else if(isset($_POST['btn'])){
+    $manv=$_POST['manv'];
+    $noidung=$_POST['noidung'];
+    $map=$_POST['map'];
+    $data = new PhongCLass;
+    $update = $data->insertDKy($manv,$noidung,$map);
+    echo "Đã lưu thông tin đăng ký";
+  }
+?>
+<?php
+      
 ?>
 
 <body>
@@ -22,15 +32,18 @@ $phongClass = new PhongClass();
   <div class="label">Thời gian</div>
   <div class="row-nhaptg">
     <input class="search" type="text" name="ngay" placeholder="Nhập ngày/tháng/năm" />
-    <button class="search-button">Xem phòng trống</button>
+    <button class="search-button" type="submit" name="btn_xem">Xem phòng trống</button>
   </div>
+  </form>
+  <form action="" method="post">
   <div class="label">Đăng ký phòng</div>
   <div class="row-nhaptg">
-    <input class="search" type="text" placeholder="Nhập mã nhân viên" />
-    <input class="search" type="text" placeholder="Nhập mục đích mượn" />
-    <input class="search" type="text" placeholder="Nhập mã phòng cần mượn" />
-    <button class="search-button">Đăng ký</button>
+    <input class="search" type="text" name="manv" placeholder="Nhập mã nhân viên" />
+    <input class="search" type="text" name="noidung" placeholder="Nhập mục đích mượn" />
+    <input class="search" type="text" name="map" placeholder="Nhập mã phòng cần mượn" />
+    <button class="search-button" type="submit" name ="btn">Đăng ký</button>
   </div>
+  </form>
   <table>
     <tr>
       <th>Mã phòng</th>
@@ -68,9 +81,12 @@ $phongClass = new PhongClass();
       </tr>
     <?php
       }}
+      else {
+        echo "Không có dữ liệu";
+      }
     ?>
   </table>
-</form>
+
   
   
   <!-- them bang -->
