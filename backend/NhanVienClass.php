@@ -16,7 +16,7 @@ class NhanVienCLass{
     // Hàm cập nhật thông tin nhân viên
     public function updateNV($manv, $gioitinh, $sdt, $ngaysinh, $ngayvaolam, $chucvu, $mapb){
         $sql = "UPDATE nhanvien SET gioitinh='$gioitinh',sdt='$sdt',ngsinh='$ngaysinh', ngvl='$ngayvaolam', chucvu='$chucvu', mapb='$mapb' WHERE manv='$manv'";
-        $result = $this -> Databse->updateNV($sql);
+        $result = $this -> Database->updateNV($sql);
         return $result;
     }
 

@@ -1,7 +1,7 @@
 <?php
 include 'header.php';
 include 'C:\xampp\htdocs\DOAN_WEBSITE\backend\NhanVienClass.php';
-$NhanVienClass = new NhanVienClass;
+$NhanVienClass = new NhanVienClass();
 ?>
 <?php
   $selectAll=$NhanVienClass->selectAll();
@@ -13,9 +13,10 @@ $NhanVienClass = new NhanVienClass;
     $chucvu=$_POST['txtchucvu'];
     $sdt=$_POST['txtsdt'];
     $gioitinh=$_POST['txtgioitinh'];
-    $ngaysinh=$_POST['txtngaysinh'];
-    $ngayvaolam=$_POST['txtngayvaolam'];
+    $ngaysinh=$_POST['txtngsinh'];
+    $ngayvaolam=$_POST['txtngvl'];
     $update = $NhanVienClass->updateNV($manv, $gioitinh, $sdt, $ngaysinh, $ngayvaolam, $chucvu, $mapb);
+    echo "Đã cập nhật thông tin nhân viên";
   }
 ?>
 
@@ -42,15 +43,13 @@ $NhanVienClass = new NhanVienClass;
           <div>Ngày vào làm</div>
         </div>
         <div class="right">
-         
-          <input type=text name="txtmanv" value="<?php echo $result['MANV']; ?>" id="" readonly="true">
-          <input type=text name="txtmapb" value="<?php echo $result['MAPB'] ?>">
-          <input type=text name="txtchucvu" value="<?php echo $result['CHUCVU'] ?>">
-          <input type=text name="txtsdt" value="<?php echo $result['SDT'] ?>">
-          <input type=text name="txtgioitinh" value="<?php echo $result['GIOITINH'] ?>">
-          <input type=text name="txtngsinh" value="<?php echo $result['NGSINH'] ?>">
-          <input type=text name="txtngvl" value="<?php echo $result['NGVL'] ?>">
-
+          <div><input type=text name="txtmanv" value="<?php echo $result['MANV']; ?>" id="" readonly="true"><div>
+          <div><input type=text name="txtmapb" value="<?php echo $result['MAPB'] ?>"><div>
+          <div><input type=text name="txtchucvu" value="<?php echo $result['CHUCVU'] ?>"><div>
+          <div><input type=text name="txtsdt" value="<?php echo $result['SDT'] ?>"><div>
+          <div><input type=text name="txtgioitinh" value="<?php echo $result['GIOITINH'] ?>"><div>
+          <div><input type=text name="txtngsinh" value="<?php echo $result['NGSINH'] ?>"><div>
+          <div><input type=text name="txtngvl" value="<?php echo $result['NGVL'] ?>"><div>
         </div>
       </div>
     </div>
@@ -59,7 +58,7 @@ $NhanVienClass = new NhanVienClass;
       }
     ?>
   <div class="row-button">
-  <a href="/DOAN_WEBSITE/backend/parts/QLNV.php"><button class="button"name="huy">Hủy</button></a>
+    <a href="/DOAN_WEBSITE/backend/parts/QLNV.php" class="button">Hủy</a>
     <button class="button" type = "submit" name="capnhat" id="">Cập nhật</button>
   </div>
   </form>
