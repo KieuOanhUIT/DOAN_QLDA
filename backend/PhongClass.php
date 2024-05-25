@@ -28,5 +28,11 @@ class PhongCLass{
         $result = $this -> Database-> insertDKy($query);
         return $result;
     }
+
+    public function selectAllDKy(){
+        $sql = "SELECT * FROM ctdkphong";
+        $result = $this->Database->selectAll_DKy($sql);
+        return $result;
+    }
 }
 ?>

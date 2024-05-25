@@ -6,15 +6,10 @@ $phongClass = new PhongClass();
 <?php
   $selectAll=$phongClass->selectAll();
 
-  if(isset($_POST['btn_xem'])){
-    $ngay = new PhongCLass;
-    $ngayy = $_POST['ngay'];
-    $getLich = $ngay->selectByNgay($ngayy);
-    if($getLich){
-      $resultID = $getLich->fetch_assoc();
-    }
-  }
-  else if(isset($_POST['btn'])){
+  $ctdkClass = new PhongClass();
+  $selectAllDKy=$ctdkClass->selectAllDKy();
+
+  if(isset($_POST['btn'])){
     $manv=$_POST['manv'];
     $noidung=$_POST['noidung'];
     $map=$_POST['map'];
@@ -28,13 +23,6 @@ $phongClass = new PhongClass();
 ?>
 
 <body>
-<form action="" method="post">
-  <div class="label">Thời gian</div>
-  <div class="row-nhaptg">
-    <input class="search" type="text" name="ngay" placeholder="Nhập ngày/tháng/năm" />
-    <button class="search-button" type="submit" name="btn_xem">Xem phòng trống</button>
-  </div>
-  </form>
   <form action="" method="post">
   <div class="label">Đăng ký phòng</div>
   <div class="row-nhaptg">
@@ -44,21 +32,29 @@ $phongClass = new PhongClass();
     <button class="search-button" type="submit" name ="btn">Đăng ký</button>
   </div>
   </form>
+
   <table>
     <tr>
+      <th>Mã nhân viên</th>
       <th>Mã phòng</th>
-      <th>Tên phòng</th>
-      <th>Thời gian mượn</th>
-      <th>Ngày</th>
-      <th>Tình trạng</th>
+      <th>Nội dung</th>
+      <th>Trạng thái</th>
     </tr>
+    <?php
+      if($selectAllDKy->num_rows >0){ while($resultDK = $selectAllDKy->fetch_assoc()){
+    ?>
       <tr>
-        <td><?php echo $resultID['MAP'] ?></td>
-        <td><?php echo $resultID['TENP'] ?></td>
-        <td><?php echo $resultID['TGMUON'] ?></td>
-        <td><?php echo $resultID['NGAY'] ?></td>
-        <td><?php echo $resultID['TINHTRANG'] ?></td>
+        <td><?php echo $resultDK['MANV'] ?></td>
+        <td><?php echo $resultDK['MAP'] ?></td>
+        <td><?php echo $resultDK['NOIDUNG'] ?></td>
+        <td><?php echo $resultDK['TRANGTHAI'] ?></td>
       </tr>
+      <?php
+      }}
+      else {
+        echo "Không có dữ liệu";
+      }
+    ?>
   </table>
 
   <table>
@@ -87,48 +83,6 @@ $phongClass = new PhongClass();
     ?>
   </table>
 
-  
-  
-  <!-- them bang -->
-  <table>
-    <tr>
-      <th>Phòng</th>
-      <th>Thời gian</th>
-      <th>Ngày</th>
-      <th>Trạng thái</th>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>8h00 - 11h30</td>
-      <td>02/05/2024</td>
-      <td>Trống</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>8h00 - 11h30</td>
-      <td>02/05/2024</td>
-      <td>Trống</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>14h00 - 16h30</td>
-      <td>02/05/2024</td>
-      <td>Trống</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>8h00 - 11h30</td>
-      <td>02/05/2024</td>
-      <td>Trống</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>14h00 - 16h30</td>
-      <td>02/05/2024</td>
-      <td>Trống</td>
-      <!-- <td><input type="checkbox"></td> -->
-    </tr>
-  </table>
 </body>
 
 <footer>

@@ -25,6 +25,12 @@ class Database{
         return $result;
     }
 
+    //hàm lấy ra danh sách đăng ký phòng
+    public function selectAll_DKy($query){
+        $result = $this->conn->query($query);
+        return $result;
+    }
+
     //hàm lấy ra lịch theo ngày
     public function selectByNgay($query){
         $result = $this->conn->query($query);
