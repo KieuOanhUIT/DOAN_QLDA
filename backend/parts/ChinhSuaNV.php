@@ -43,13 +43,13 @@ $NhanVienClass = new NhanVienClass();
           <div>Ngày vào làm</div>
         </div>
         <div class="right">
-          <div><input type=text name="txtmanv" value="<?php echo $result['MANV']; ?>" id="" readonly="true"><div>
-          <div><input type=text name="txtmapb" value="<?php echo $result['MAPB'] ?>"><div>
-          <div><input type=text name="txtchucvu" value="<?php echo $result['CHUCVU'] ?>"><div>
-          <div><input type=text name="txtsdt" value="<?php echo $result['SDT'] ?>"><div>
-          <div><input type=text name="txtgioitinh" value="<?php echo $result['GIOITINH'] ?>"><div>
-          <div><input type=text name="txtngsinh" value="<?php echo $result['NGSINH'] ?>"><div>
-          <div><input type=text name="txtngvl" value="<?php echo $result['NGVL'] ?>"><div>
+          <div><input type=text name="txtmanv" value="<?php echo $result['MANV']; ?>" id="" readonly="true"></div>
+          <div><input type=text name="txtmapb" value="<?php echo $result['MAPB'] ?>"></div>
+          <div><input type=text name="txtchucvu" value="<?php echo $result['CHUCVU'] ?>"></div>
+          <div><input type=text name="txtsdt" value="<?php echo $result['SDT'] ?>"></div>
+          <div><input type=text name="txtgioitinh" value="<?php echo $result['GIOITINH'] ?>"></div>
+          <div><input type=text name="txtngsinh" value="<?php echo $result['NGSINH'] ?>"></div>
+          <div><input type=text name="txtngvl" value="<?php echo $result['NGVL'] ?>"></div>
         </div>
       </div>
     </div>
