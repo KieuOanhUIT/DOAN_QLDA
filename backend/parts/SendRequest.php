@@ -1,28 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee Send Resquest</title>
-    <link rel="stylesheet" href="/pages/css/SendRequest.css">
+<?php
+include 'header.php';
+include 'C:\xamppp\htdocs\DOAN_WEBSITE\backend\YeuCauClass.php';
+$yeucauClass = new YeuCauClass();
+?>
 
-    <!--trong thẻ head thêm-->
-    <link rel="stylesheet" href="/pages/css/header.css" />
-    <link rel="stylesheet" href="/pages/css/footer.css" />
-    <script>
-      window.onload = function () {
-        // Include Header
-        fetch("/pages/html/header.html")
-          .then(response => response.text())
-          .then(data => document.querySelector("header").innerHTML = data);
-  
-        // Include Footer
-        fetch("/pages/html/footer.html")
-          .then(response => response.text())
-          .then(data => document.querySelector("footer").innerHTML = data);
-      }
-    </script>
-</head>
 <header id="header"></header>
 <body>
     <div id="wp-content">
@@ -98,5 +79,12 @@
 
     </div>
 </body>
-<footer id="footer"></footer>
+
+<!-- chân trang-------------------------------->
+<footer>
+  <?php
+    include 'footer.php';
+  ?>
+</footer>
+
 </html>
