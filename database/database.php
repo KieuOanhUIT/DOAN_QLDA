@@ -60,10 +60,10 @@ class Database{
         $result = $this->conn->query($query);
         return $result;
     }
-    <!--------------------------------------------------------------->
-    //hàm lấy ra tất cả các yêu cầu
-    public function selectAll_YC($query){
-        $result = $this->conn->query($query);
-        return $result;
+    //<!--------------------------------------------------------------->
+    public function executeQuery($query) {
+        return $this->conn->query($query);
     }
 }
+
+?>
