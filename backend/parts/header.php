@@ -34,7 +34,7 @@
           <li class="nav__item"><a href="/DOAN_QLDA/backend/parts/LichPhong.php">Lịch phòng</a></li>
           <li class="nav__item"><a href="/DOAN_QLDA/backend/parts/DKyPhong.php">Đăng ký phòng</a></li>
           <li class="nav__item"><a href="/DOAN_QLDA/backend/parts/QLNV.php">Quản lý nhân viên</a></li>
-          <li class="nav__item"><a href="#">Nhân viên</a></li>
+          <li class="nav__item"><a href="/DOAN_QLDA/backend/parts/SendRequest.php">Nhân viên</a></li>
         </ul>
       </nav>
     </div>
