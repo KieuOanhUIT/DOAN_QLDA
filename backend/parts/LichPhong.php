@@ -21,7 +21,7 @@ $phongClass = new PhongClass();
 <form action="" method="post">
 <div class="label">Thời gian</div>
   <div class="row-nhaptg">
-    <input class="search" type="text" name="ngay" placeholder="Nhập ngày/tháng/năm" />
+    <input class="search" type="text" name="ngay" placeholder="Nhập yyyy-mm-dd" />
     <button class="search-button">Xem lịch</button>
     
   </div>
