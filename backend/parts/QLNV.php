@@ -34,7 +34,7 @@ $NhanVienClass = new NhanVienClass();
           <div>Phòng ban</div>
           <div>Chức vụ</div>
           <div>Số điện thoại</div>
-          <div>Địa chỉ</div>
+          <div>Giới tính</div>
           <div>Ngày sinh</div>
           <div>Ngày vào làm</div>
         </div>
@@ -67,7 +67,7 @@ $NhanVienClass = new NhanVienClass();
           <div>Phòng ban</div>
           <div>Chức vụ</div>
           <div>Số điện thoại</div>
-          <div>Địa chỉ</div>
+          <div>Giới tính</div>
           <div>Ngày sinh</div>
           <div>Ngày vào làm</div>
         </div>
