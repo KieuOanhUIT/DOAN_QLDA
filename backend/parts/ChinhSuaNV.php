@@ -1,6 +1,6 @@
 <?php
 include 'header.php';
-include 'C:\xampp\htdocs\DOAN_WEBSITE\backend\NhanVienClass.php';
+include 'C:\xampp\htdocs\DOAN_QLDA\backend\NhanVienClass.php';
 $NhanVienClass = new NhanVienClass();
 ?>
 <?php
@@ -58,7 +58,7 @@ $NhanVienClass = new NhanVienClass();
       }
     ?>
   <div class="row-button">
-    <a href="/DOAN_WEBSITE/backend/parts/QLNV.php" class="button">Hủy</a>
+    <a href="/DOAN_QLDA/backend/parts/QLNV.php" class="button">Hủy</a>
     <button class="button" type = "submit" name="capnhat" id="">Cập nhật</button>
   </div>
   </form>

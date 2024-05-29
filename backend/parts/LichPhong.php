@@ -1,6 +1,6 @@
 <?php
 include 'header.php';
-include 'C:\xampp\htdocs\DOAN_WEBSITE\backend\PhongClass.php';
+include 'C:\xampp\htdocs\DOAN_QLDA\backend\PhongClass.php';
 $phongClass = new PhongClass();
 ?>
 <?php

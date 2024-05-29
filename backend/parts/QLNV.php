@@ -1,6 +1,6 @@
 <?php
 include 'header.php';
-include 'C:\xampp\htdocs\DOAN_WEBSITE\backend\NhanVienClass.php';
+include 'C:\xampp\htdocs\DOAN_QLDA\backend\NhanVienClass.php';
 $NhanVienClass = new NhanVienClass();
 ?>
 <?php
@@ -27,7 +27,7 @@ $NhanVienClass = new NhanVienClass();
       <img src="https://i.pinimg.com/564x/12/fe/2d/12fe2d285f543778b31f4893cf4c22ff.jpg" />
     </div>
     <div class="infor">
-      <div class="name"><?php echo $resultID['TENNV']?><a href="/DOAN_WEBSITE/backend/parts/ChinhSuaNV.php"><i class="fa fa-pen" style="color: #2b7a77;"></i></a></div>
+      <div class="name"><?php echo $resultID['TENNV']?><a href="/DOAN_QLDA/backend/parts/ChinhSuaNV.php"><i class="fa fa-pen" style="color: #2b7a77;"></i></a></div>
       <div class="infor-content">
         <div class="left">
           <div>Mã nhân viên</div>
@@ -60,7 +60,7 @@ $NhanVienClass = new NhanVienClass();
       <img src="https://i.pinimg.com/564x/12/fe/2d/12fe2d285f543778b31f4893cf4c22ff.jpg" />
     </div>
     <div class="infor">
-      <div class="name"><?php echo $result['TENNV']?><a href="/DOAN_WEBSITE/backend/parts/ChinhSuaNV.php"><i class="fa fa-pen" style="color: #2b7a77;"></i></a></div>
+      <div class="name"><?php echo $result['TENNV']?><a href="/DOAN_QLDA/backend/parts/ChinhSuaNV.php"><i class="fa fa-pen" style="color: #2b7a77;"></i></a></div>
       <div class="infor-content">
         <div class="left">
           <div>Mã nhân viên</div>

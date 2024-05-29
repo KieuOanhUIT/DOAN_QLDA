@@ -1,5 +1,5 @@
 <?php
-include 'C:\xampp\htdocs\DOAN_WEBSITE\database\database.php';
+include 'C:\xampp\htdocs\DOAN_QLDA\database\database.php';
 
 class PhongCLass{
     public $Database;
