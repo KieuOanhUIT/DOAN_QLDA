@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web</title>
+    <link rel="stylesheet" href="/pages/css/XuLyYeuCau.css">
+    <link rel="stylesheet" href="/pages/js/XuLyYeuCau.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-1cSB3Qs0T0YOvl9N5ib4sycXlK/y+3RmuZV1nQxqF9cCUb/DG7eHPP2lwHpViuTc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <link rel="stylesheet" href="/pages/css/header.css" />
+    <link rel="stylesheet" href="/pages/css/footer.css" />
+
+    <script>
+        window.onload = function () {
+          // Include Header
+          fetch("header.html")
+            .then(response => response.text())
+            .then(data => document.querySelector("header").innerHTML = data);
+    
+          // Include Footer
+          fetch("footer.html")
+            .then(response => response.text())
+            .then(data => document.querySelector("footer").innerHTML = data);
+        }
+      </script>
+
+</head>
+<header id="header"></header>
+<body>
+    <div class="container">
+        <div class="text-box">
+            XỬ LÝ YÊU CẦU
+        </div>
+        <div class="line"></div>
+        <div class="input-container">
+            <input type="text" class="input" placeholder="Tìm kiếm">
+            <div class="label">Tìm kiếm</div>
+            <div class="search-icon"></div>
+        </div>
+  <div class="container_table">
+        <table  class="data-table">
+            <thead>
+               <tr>
+                    <th colspan="7" id="request-header">CÁC YÊU CẦU</th>
+                </tr>
+                <tr>
+                    <th>STT</th>
+                    <th>Mã nhân viên</th>
+                    <th>Tên nhân viên</th>
+                    <th>Loại yêu cầu</th>
+                    <th>Nội dung</th>
+                    <th>Ngày tạo</th>
+                    <th>Trạng thái</th>
+                </tr>
+            </thead>
+            <tbody>
+              <button id="test1" onclick="alert('row 1')">
+                <tr>
+                  <td>1</td>
+                    <td>NV001</td>
+                    <td>John Doe</td>
+                    <td>Yêu cầu A</td>
+                    <td>Nội dung A</td>
+                    <td>2024-05-07</td>
+                    <td>Đã xử lý</td>
+                </tr>
+              </button>
+              <button id="test2" onclick="alert('row 2')">
+                <tr>
+                    <td>2</td>
+                    <td>NV002</td>
+                    <td>Jane Smith</td>
+                    <td>Yêu cầu B</td>
+                    <td>Nội dung B</td>
+                    <td>2024-05-08</td>
+                    <td>Chưa xử lý</td>
+                </tr>
+              </button>
+              <button id="test3" onclick="alert('row 3')">
+                <tr>
+                    <td>3</td>
+                    <td>NV003</td>
+                    <td>Jane Smith</td>
+                    <td>Yêu cầu B</td>
+                    <td>Nội dung B</td>
+                    <td>2024-05-08</td>
+                    <td>Chưa xử lý</td>
+                </tr>
+              </button>
+              <button id="test4" onclick="alert('row 4')">
+                <tr>
+                    <td>4</td>
+                    <td>NV004</td>
+                    <td>Jane Smith</td>
+                    <td>Yêu cầu B</td>
+                    <td>Nội dung B</td>
+                    <td>2024-05-08</td>
+                    <td>Chưa xử lý</td>
+                </tr>
+              </button>
+              <button id="test5" onclick="alert('row 5')">
+                <tr>
+                    <td>5</td>
+                    <td>NV005</td>
+                    <td>Jane Smith</td>
+                    <td>Yêu cầu B</td>
+                    <td>Nội dung B</td>
+                    <td>2024-05-08</td>
+                    <td>Chưa xử lý</td>
+                </tr>
+              </button>
+              <button id="test6" onclick="alert('row 6')">
+                <tr>
+                    <td>6</td>
+                    <td>NV006</td>
+                    <td>Jane Smith</td>
+                    <td>Yêu cầu B</td>
+                    <td>Nội dung B</td>
+                    <td>2024-05-08</td>
+                    <td>Chưa xử lý</td>
+                </tr>
+              </button>
+              <button id="test7" onclick="alert('row 7')">
+                <tr>
+                    <td id="left-corner-table">7</td>
+                    <td>NV007</td>
+                    <td>Jane Smith</td>
+                    <td>Yêu cầu B</td>
+                    <td>Nội dung B</td>
+                    <td>2024-05-08</td>
+                    <td id="right-corner-table">Chưa xử lý</td>
+                </tr>
+                </button>
+            </tbody>
+        </table>
+    </div>
+  <div class="container1"></div>
+<div class="container11">
+    <div id="text-box1">NỘI DUNG YÊU CẦU</div>
+</div>
+  <div class="input-container1">
+    <div class="input1"></div>
+    <div class="label1">Mã nhân viên</div>
+  </div>
+  <div class="input-container2">
+    <div class="input2"></div>
+    <div class="label2">Tên nhân viên</div>
+  </div>
+  <div class="input-container3">
+    <div class="input3"></div>
+    <div class="label3">Loại yêu cầu</div>
+  </div>
+  <div class="input-container4">
+    <div class="input4"></div>
+    <div class="label4">Ngày tạo</div>
+  </div>
+  <div class="input-container5">
+    <div class="input5"></div>
+    <div class="label5">Nội dung</div>
+  </div>
+  <button class="custom-button">Không chấp nhận</button>
+  <button class="custom-button1">Chấp nhận</button>
+</div>
+</body>
+<footer id="footer"></footer>
+</html>

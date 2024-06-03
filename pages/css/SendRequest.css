@@ -1,0 +1,142 @@
+
+h3{
+    font-family: 'Inter', sans-serif;
+    color: #2B7A77 ;
+}
+#wp-content{
+    max-width: 960px;
+    margin: 0 auto;
+    background: rgb(249, 248, 248);
+    text-align: center;
+    padding: 1px 10px 10px 0px;
+
+
+}
+ .KhuVucDangKyYeuCau{
+    margin-top: 50px;
+    box-shadow: 0 4px 8px #aaa8a8;
+}
+ .KhuVucBangYeuCau{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px #aaa8a8;
+
+}
+
+.KhuVucBangYeuCau{
+    background: #DEF2F1;
+    margin: 0px 50px 0px 50px ;
+    padding: 1px 10px 10px 10px;
+    border-radius: 20px; 
+}
+
+#employeeTable{
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+#employeeTable tbody tr:hover{
+    background: rgb(182, 234, 182);
+}
+
+th{
+    background: #2B7A77;
+    color: aliceblue;
+}
+
+th, td {
+    border: 1px solid rgb(216, 201, 201);
+    padding: 4px;
+    text-align: center;
+}
+.search-container {
+    text-align: left;
+    margin: 0px 50px 0px 50px ;
+    padding: 0px 10px 30px 10px;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+}
+.search-container button[type="button"] {
+    float: right;
+    background-color: #2B7A77;
+    border-radius: 19px;
+    width: 60px;
+    height: 25px;
+    
+    color: white;
+    border: none;
+}
+.search-container button[type="button"]:hover {
+    background-color: darkgreen; /* Màu nền xanh lá tối khi di chuột qua */
+}
+
+/*-----------------------------------------------*/
+
+.KhuVucDangKyYeuCau{
+    background: #DEF2F1;
+    padding: 1px 10px 10px 10px;
+    border-radius: 20px;
+    margin: 50px 50px 0px 50px ;  
+}
+
+.KhuVucDangKyYeuCau form {
+    text-align: left; /* Căn trái nội dung form */
+    margin: 0px 10px 0px 10px;
+    margin-top: 1px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+#saveButton{
+    background: #2B7A77;
+    text-align: center;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 19px;
+    width: 80px;
+    height: 30px;
+    margin-bottom: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+#saveButton:hover {
+    background-color: darkgreen; /* Màu nền xanh lá tối khi di chuột qua */
+}
+
+#manv{
+    margin: 5px 10px 5px 0px;
+    width: 200px;
+    height: 25px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+
+#LYC{
+    margin: 5px 10px 5px 0px;
+    width: 200px;
+    height: 25px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+#NoiDung{
+    margin: 5px 10px 5px 0px;
+    max-width: 500px;
+    min-width: 500px;
+    min-height: 25px;
+    max-height: 25px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+/* CSS cho các hàng được chọn */
+.selected {
+    background-color: #ff0000;
+}
+

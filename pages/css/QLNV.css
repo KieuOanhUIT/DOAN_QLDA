@@ -1,0 +1,123 @@
+/* search section */
+.search-box {
+  padding-left: 80px;
+  padding-top: 10px;
+  width: 228px;
+  height: 40px;
+  color: #000000;
+  font-size: 16px;
+  font-family: UTM Neo Sans Intel, "Bold";
+  font-weight: 700;
+  text-align: center;
+  vertical-align: center;
+}
+
+.search-button {
+  background-color: #2b7a77;
+  border: none;
+  color: #fff;
+  padding: 6px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.search-input {
+  margin-right: 20px;
+  height: 30px;
+  margin-left: 80px;
+  background-color: #def2f1;
+  border-radius: 4px;
+}
+
+.fa-pen {
+  font-size: 40px;
+}
+
+
+/* card section */
+.avatar {
+  background: #dddddd;
+  border-radius: 50%;
+  border: 10px solid #2b7a77;
+  height: 390px;
+  margin: 60px;
+  padding: 0;
+  text-align: center;
+  width: 390px;
+}
+
+.avatar img {
+  height: 370px;
+  width: 370px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.employee-card {
+  display: flex;
+}
+
+.infor {
+  padding-top: 40px;
+}
+
+.infor-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.employee-card .right {
+  line-height: 50px;
+  height: 10px;
+  color: #2b7a77;
+  font-size: 26px;
+  font-family: UTM Neo Sans Intel, "Regular";
+  font-weight: 400;
+}
+
+.employee-card .left {
+  line-height: 50px;
+  height: 10px;
+  color: #525252;
+  font-size: 26px;
+  font-family: UTM Neo Sans Intel, "Bold";
+  font-weight: 700;
+}
+
+.name {
+  width: 650px;
+  height: 80px;
+  color: #2b7a77;
+  font-size: 46px;
+  font-family: UTM Neo Sans Intel, "Bold";
+  font-weight: 700;
+}
+
+/* page number section */
+.row-pgnumber {
+  justify-content: center;
+  display: flex;
+}
+
+.button-page {
+  background-color: #def2f1;
+  border: none;
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+  color: #000;
+  text-align: center;
+  padding: 8px 8px;
+  text-align: center;
+  font-size: 20px;
+  margin: 20px 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}

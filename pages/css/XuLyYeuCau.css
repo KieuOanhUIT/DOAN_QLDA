@@ -1,0 +1,539 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.container {
+    width: 1440px;
+    height: 1300px;
+    background-color: white;
+    position: relative;
+}
+
+.text-box {
+    position: absolute;
+    left: 658px;
+    top: 181px;
+    width: 150px;
+    height: 21px;
+    text-align: center;
+    line-height: 21px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.line {
+    position: absolute;
+    left: 141px;
+    top: 221px;
+    width: 1164px;
+    height: 1px;
+    background-color: black;
+}
+
+.input-container {
+    position: absolute;
+    left: 134.5px;
+    top: 309px;
+    width: 292px;
+    height: 36px;
+    border-radius: 26px;
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    width: 15px;
+    height: 15px;
+    background-image: url('https://static-00.iconduck.com/assets.00/search-icon-2048x2048-cmujl7en.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: -30px;
+    margin-right: 15px;
+}
+
+.input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 40px 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+.label {
+    position: absolute;
+    top: -25px;
+    left: -10px;
+    width: 200px;
+    height: 19px;
+    padding: 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+}
+
+#request-header {
+    background-color: #2B7A77; /* Màu nền của class request-header */
+    color: #FFFAFA; /* Màu chữ của class request-header */
+    width: 1162px;
+    height: 65px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    text-align: center;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    padding: 10px; /* Thêm padding để căn giữa dòng chữ */
+}
+
+.container_table {
+    position: absolute;
+    left: 134.5px;
+    top: 371px;
+    width: 1162.26px;
+    height: 379px; 
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Inter', sans-serif; /* Phông chữ Inter cho toàn bộ bảng */
+}
+
+.data-table th,
+.data-table td {
+    padding: 10px;
+    border: 2px solid #ffffff; /* Đường viền màu trắng */
+    text-align: center;
+}
+
+.data-table th {
+    background-color: #3AAFA9; /* Màu nền hàng đầu tiên */
+    color: #ffffff; /* Màu chữ hàng đầu tiên */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.data-table tbody tr:nth-child(odd) {
+    background-color: #DEF2F1; /* Màu nền hàng lẻ */
+    cursor: pointer; /* Biến con trỏ chuột thành hình bàn tay */
+}
+
+.data-table tbody tr:nth-child(even) {
+    background-color: #DEF2F1; /* Màu nền hàng chẵn */
+    cursor: pointer; /* Biến con trỏ chuột thành hình bàn tay */
+}
+
+.data-table tbody tr td {
+    color: #000000; /* Màu chữ hàng dưới */
+    font-size: 16px;
+}
+
+#left-corner-table {
+    border-bottom-left-radius: 35px;
+}
+
+#right-corner-table {
+    border-bottom-right-radius: 35px;
+}
+
+.container1 {
+    position: absolute;
+    left: 134.5px;
+    top: 852px;
+    width: 1162px;
+    height: 379px;
+    border-radius: 35px;
+    background-color: #DEF2F1;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container11 {
+    position: absolute;
+    left: 134.5px;
+    top: 852px; /* Thay đổi vị trí để tránh chồng lên container1 */
+    width: 1162px;
+    height: 65px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    background-color: #2B7A77;
+}
+
+#text-box1 {
+    position: absolute;
+    left: 0; /* Điều chỉnh left và top về 0 để nằm chính giữa container11 */
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 65px; /* Canh giữa theo chiều cao của container11 */
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff; /* Thêm màu chữ trắng */
+}
+
+.input-container1 {
+    position: absolute;
+    left: 238.67px;
+    top: 971px;
+    width: 147.83px;
+    height: 33.74px;
+    border-radius: 12px;
+    background-color: #FFF9F9;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.input1 {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 10px 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    max-width: 89%; /* Giới hạn chiều rộng không vượt quá phần trống trong container */
+    max-height: 100%; /* Giới hạn chiều cao không vượt quá phần trống trong container */
+    color: #000000;
+}
+
+.label1 {
+    position: absolute;
+    top: -25px;
+    left: -10px;
+    width: 200px;
+    height: 19px;
+    padding: 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.input-container2 {
+    position: absolute;
+    left: 451.67px;
+    top: 971px;
+    width: 273.83px;
+    height: 33.74px;
+    border-radius: 12px;
+    background-color: #FFF9F9;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.input2 {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 10px 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    max-width: 89%; /* Giới hạn chiều rộng không vượt quá phần trống trong container */
+    max-height: 100%; /* Giới hạn chiều cao không vượt quá phần trống trong container */
+    color: #000000;
+}
+
+.label2 {
+    position: absolute;
+    top: -25px;
+    left: -10px;
+    width: 200px;
+    height: 19px;
+    padding: 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.input-container3 {
+    position: absolute;
+    left: 750px; /* Điều chỉnh vị trí của input-container3 */
+    top: 971px;
+    width: 200px; /* Mở rộng chiều rộng của input-container3 */
+    height: 33.74px;
+    border-radius: 12px;
+    background-color: #FFF9F9;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.input3 {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 10px 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    max-width: 89%; /* Giới hạn chiều rộng không vượt quá phần trống trong container */
+    max-height: 100%; /* Giới hạn chiều cao không vượt quá phần trống trong container */
+    color: #000000;
+}
+
+.label3 {
+    position: absolute;
+    top: -25px;
+    left: -10px;
+    width: 200px;
+    height: 19px;
+    padding: 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.input-container4 {
+    position: absolute;
+    left: 1033.67px;
+    top: 971px;
+    width: 147.83px;
+    height: 33.74px;
+    border-radius: 12px;
+    background-color: #FFF9F9;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.input4 {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 10px 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    max-width: 89%; /* Giới hạn chiều rộng không vượt quá phần trống trong container */
+    max-height: 100%; /* Giới hạn chiều cao không vượt quá phần trống trong container */
+    color: #000000;
+}
+
+.label4 {
+    position: absolute;
+    top: -25px;
+    left: -10px;
+    width: 200px;
+    height: 19px;
+    padding: 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.input-container5 {
+    position: absolute;
+    left: 240.5px;
+    top: 1055px;
+    width: 941px;
+    height: 33.74px;
+    border-radius: 12px;
+    background-color: #FFF9F9;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.input5 {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 10px 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    max-width: 89%; /* Giới hạn chiều rộng không vượt quá phần trống trong container */
+    max-height: 100%; /* Giới hạn chiều cao không vượt quá phần trống trong container */
+    color: #000000;
+}
+
+.label5 {
+    position: absolute;
+    top: -25px;
+    left: -10px;
+    width: 200px;
+    height: 19px;
+    padding: 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.custom-button {
+    position: absolute;
+    left: 506.5px;
+    top: 1149px;
+    width: 175px;
+    height: 42px;
+    border-radius: 19px;
+    background-color: #17242A;
+    color: #FFF9F9;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 42px; /* Để chữ được căn giữa theo chiều cao của button */
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); /* Shadow với y = 4, blur = 4, màu #000000 và độ mờ là 25% */
+}
+
+.custom-button1 {
+    position: absolute;
+    left: 745.5px;
+    top: 1149px;
+    width: 175px;
+    height: 42px;
+    border-radius: 19px;
+    background-color: #2B7A77;
+    color: #FFF9F9;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 42px; /* Để chữ được căn giữa theo chiều cao của button */
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); /* Shadow với y = 4, blur = 4, màu #000000 và độ mờ là 25% */
+}
+
+#test1 {
+    position: absolute;
+    left: 1.5px;
+    top: 108px;
+    width: 1161.26px;
+    height: 39px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    color: blue;
+    padding: 0;
+}
+
+#test2 {
+    position: absolute;
+    left: 1.5px;
+    top: 149px;
+    width: 1161.26px;
+    height: 39px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    color: blue;
+    padding: 0;
+}
+
+#test3 {
+    position: absolute;
+    left: 1.5px;
+    top: 189px;
+    width: 1161.26px;
+    height: 39px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    color: blue;
+    padding: 0;
+}
+
+#test4 {
+    position: absolute;
+    left: 1.5px;
+    top: 230px;
+    width: 1161.26px;
+    height: 39px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    color: blue;
+    padding: 0;
+}
+
+#test5 {
+    position: absolute;
+    left: 1.5px;
+    top: 270.5px;
+    width: 1161.26px;
+    height: 39px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    color: blue;
+    padding: 0;
+}
+
+#test6 {
+    position: absolute;
+    left: 1.5px;
+    top: 311px;
+    width: 1161.26px;
+    height: 39px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    color: blue;
+    padding: 0;
+}
+
+#test7 {
+    position: absolute;
+    left: 1.5px;
+    top: 351.5px;
+    width: 1161.26px;
+    height: 39px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    color: blue;
+    padding: 0;
+    border-bottom-left-radius: 33px;
+    border-bottom-right-radius: 33px;
+}
+
+.data-table tbody tr:hover {
+    cursor: pointer; /* Biến con trỏ chuột thành hình bàn tay */
+}
+
+
+
+
+

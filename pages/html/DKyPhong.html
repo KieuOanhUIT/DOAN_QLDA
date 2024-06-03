@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Đăng ký phòng</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/pages/css/DKYPhong.css" />
+  <link rel="stylesheet" href="/pages/css/header.css" />
+  <link rel="stylesheet" href="/pages/css/footer.css" />
+
+  <script>
+    window.onload = function () {
+      // Include Header
+      fetch("/pages/html/header.html")
+        .then(response => response.text())
+        .then(data => document.querySelector("header").innerHTML = data);
+
+      // Include Footer
+      fetch("/pages/html/footer.html")
+        .then(response => response.text())
+        .then(data => document.querySelector("footer").innerHTML = data);
+    }
+  </script>
+</head>
+
+<header id="header"></header>
+
+<body>
+  <div class="label">Thời gian</div>
+  <div class="row-nhaptg">
+    <input class="search" type="text" placeholder="Nhập ngày" />
+    <input class="search" type="text" placeholder="Nhập tháng" />
+    <input class="search" type="text" placeholder="Nhập năm" />
+    <button class="search-button">Xem phòng trống</button>
+  </div>
+  <div class="label">Đăng ký phòng</div>
+  <div class="row-nhaptg">
+    <input class="search" type="text" placeholder="Nhập mã nhân viên" />
+    <input class="search" type="text" placeholder="Nhập mục đích mượn" />
+    <input class="search" type="text" placeholder="Nhập mã phòng cần mượn" />
+    <button class="search-button">Đăng ký</button>
+  </div>
+  
+  <!-- them bang -->
+  <table>
+    <tr>
+      <th>Phòng</th>
+      <th>Thời gian</th>
+      <th>Ngày</th>
+      <th>Trạng thái</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>8h00 - 11h30</td>
+      <td>02/05/2024</td>
+      <td>Trống</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>8h00 - 11h30</td>
+      <td>02/05/2024</td>
+      <td>Trống</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>14h00 - 16h30</td>
+      <td>02/05/2024</td>
+      <td>Trống</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>8h00 - 11h30</td>
+      <td>02/05/2024</td>
+      <td>Trống</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>14h00 - 16h30</td>
+      <td>02/05/2024</td>
+      <td>Trống</td>
+      <!-- <td><input type="checkbox"></td> -->
+    </tr>
+  </table>
+</body>
+
+<footer id="footer"></footer>
+
+</html>

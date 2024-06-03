@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <!--
+      This is the page head - it contains info the browser uses
+      Like the title, which appears on the browser tab but not inside the page
+      Further down you'll see the content that displays in the page
+    -->
+    <title>Quy định</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="/pages/css/QuyDinh.css" />
+    <link rel="stylesheet" href="/pages/css/header.css" />
+    <link rel="stylesheet" href="/pages/css/footer.css" />
+
+  <script>
+    window.onload = function () {
+      // Include Header
+      fetch("header.html")
+        .then(response => response.text())
+        .then(data => document.querySelector("header").innerHTML = data);
+
+      // Include Footer
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => document.querySelector("footer").innerHTML = data);
+    }
+  </script>
+
+    <!-- The website JavaScript file -->
+    <!-- <script src="script.js" defer></script> -->
+  </head>
+  <header id="header"></header>
+  <body>
+        <div class="container">
+        <div class="text">
+            <strong>Quy định</strong>
+        </div>
+        <div class="line"></div>
+        <div class="linee"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+        <div class="line4"></div>
+        <div class="line5"></div>
+        <div class="line6"></div>
+        <div class="textbox">
+            1. Chính sách bảo mật và bảo mật thông tin
+        </div>
+        <div class="textbox2">
+            2. Thu thập thông tin cá nhân
+        </div>
+        <div class="textbox3">
+            3. Bảo mật thông tin
+        </div>
+        <div class="textbox4">
+            4. sử dụng thông tin
+        </div>
+        <div class="textbox5">
+            5. Quyền lợi của bạn
+        </div>
+        <div class="textbox6">
+            6. Thay đổi chính sách
+        </div>
+        <div class="textbox7">
+            <strong>1. Chính sách Bảo mật và Bảo mật Thông tin</strong><br>
+            Chào mừng bạn đến với trang Chính sách của chúng tôi. Tại đây, chúng tôi cam kết bảo vệ thông tin cá nhân của bạn và cung cấp một trải nghiệm mua sắm trực tuyến an toàn và đáng tin cậy. Vui lòng đọc kỹ các điều khoản dưới đây để hiểu rõ cách chúng tôi thu thập, sử dụng và bảo vệ thông tin của bạn.<br><br>
+            <strong>2. Thu thập thông tin cá nhân</strong><br>
+            Khi bạn truy cập vào trang web của chúng tôi hoặc thực hiện một giao dịch mua sắm, chúng tôi có thể thu thập một số thông tin cá nhân từ bạn. Điều này có thể bao gồm tên, địa chỉ email, địa chỉ giao hàng và thông tin thanh toán. Chúng tôi cam kết chỉ sử dụng thông tin này để cung cấp dịch vụ cho bạn và không bao giờ chia sẻ thông tin này với bên thứ ba mà không có sự đồng ý của bạn.<br><br>
+            <strong>3. Bảo mật thông tin</strong><br>
+            Chúng tôi sử dụng các biện pháp bảo mật hàng đầu để bảo vệ thông tin cá nhân của bạn khỏi mất mát, lạc hướng, truy cập trái phép hoặc phá hỏng. Tất cả thông tin mà bạn cung cấp cho chúng tôi được lưu trữ trên các máy chủ an toàn và được bảo vệ bằng các công nghệ mã hóa tiên tiến.<br><br>
+            <strong>4. Sử dụng thông tin</strong><br>
+            Thông tin cá nhân mà chúng tôi thu thập có thể được sử dụng để:<br>
+            - Xử lý và vận chuyển đơn đặt hàng của bạn.<br>
+            - Liên lạc với bạn về đơn hàng hoặc cung cấp thông tin về sản phẩm và dịch vụ.<br>
+            - Cải thiện trải nghiệm mua sắm của bạn bằng cách cá nhân hóa nội dung và quảng cáo.<br><br>
+            <strong>5. Quyền lợi của bạn</strong><br>
+            Bạn có quyền truy cập, chỉnh sửa hoặc xóa thông tin cá nhân của mình bất cứ lúc nào bằng cách đăng nhập vào tài khoản của mình trên trang web của chúng tôi. Nếu bạn có bất kỳ câu hỏi hoặc lo ngại nào về việc chúng tôi thu thập và sử dụng thông tin của bạn, vui lòng liên hệ với chúng tôi.<br><br>
+            <strong>6. Thay đổi chính sách</strong><br>
+            Chúng tôi có thể cập nhật hoặc thay đổi Chính sách Bảo mật và Bảo mật Thông tin này từ thời gian này sang thời gian khác để phản ánh các thay đổi trong cách chúng tôi thu thập, sử dụng hoặc chia sẻ thông tin. Bằng cách tiếp tục sử dụng dịch vụ của chúng tôi sau khi các thay đổi này có hiệu lực, bạn đồng ý với các điều khoản mới. Nếu bạn có bất kỳ câu hỏi hoặc ý kiến ​​nào về Chính sách Bảo mật và Bảo mật Thông tin của chúng tôi, vui lòng liên hệ với chúng tôi. Cảm ơn bạn đã đọc và hiểu rõ Chính sách của chúng tôi.
+        </div>
+    </div>
+  </body>
+  <footer id="footer"></footer>
+</html>

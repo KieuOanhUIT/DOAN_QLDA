@@ -1,0 +1,82 @@
+  /* card section */
+  .avatar {
+    background: #dddddd;
+    border-radius: 50%;
+    border: 10px solid #2b7a77;
+    height: 390px;
+    margin: 60px;
+    padding: 0;
+    text-align: center;
+    width: 390px;
+  }
+  
+  .avatar img {
+    height: 370px;
+    width: 370px;
+    border-radius: 50%;
+    margin: auto;
+  }
+  
+  .employee-card {
+    display: flex;
+  }
+  
+  .infor {
+    padding-top: 40px;
+  }
+  
+  .infor-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .employee-card .right {
+    line-height: 50px;
+    height: 10px;
+    color: #2b7a77;
+    font-size: 26px;
+    font-family: UTM Neo Sans Intel, "Regular";
+    font-weight: 400;
+  }
+  
+  .employee-card .left {
+    line-height: 50px;
+    height: 10px;
+    color: #525252;
+    font-size: 26px;
+    font-family: UTM Neo Sans Intel, "Bold";
+    font-weight: 700;
+  }
+  
+  .name {
+    width: 650px;
+    height: 80px;
+    color: #2b7a77;
+    font-size: 46px;
+    font-family: UTM Neo Sans Intel, "Bold";
+    font-weight: 700;
+  }
+  
+  .row-button {
+    text-align: right;
+    margin-right: 80px;
+}
+
+.button {
+    background-color: #2b7a77;
+    border: none;
+    color: #fff;
+    padding: 8px 30px;
+    padding-left: 50px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* margin: 2px 2px; */
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 4px;
+}
