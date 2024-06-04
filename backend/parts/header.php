@@ -28,9 +28,9 @@
           menu
         </button>
         <ul class="nav__wrapper">
-          <li class="nav__item"><a href="#">Trang chủ</a></li>
-          <li class="nav__item"><a href="#">Quy định</a></li>
-          <li class="nav__item"><a href="#">Xử lý yêu cầu</a></li>
+          <li class="nav__item"><a href="/DOAN_QLDA/backend/parts/homePage.php">Trang chủ</a></li>
+          <li class="nav__item"><a href="/DOAN_QLDA/backend/parts/QuyDinh.php">Quy định</a></li>
+          <li class="nav__item"><a href="/DOAN_QLDA/backend/parts/QL_PheDuyetVaTimKiemYeuCau.php">Xử lý yêu cầu</a></li>
           <li class="nav__item"><a href="/DOAN_QLDA/backend/parts/LichPhong.php">Lịch phòng</a></li>
           <li class="nav__item"><a href="/DOAN_QLDA/backend/parts/DKyPhong.php">Đăng ký phòng</a></li>
           <li class="nav__item"><a href="/DOAN_QLDA/backend/parts/QLNV.php">Quản lý nhân viên</a></li>

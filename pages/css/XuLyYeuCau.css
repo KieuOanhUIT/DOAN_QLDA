@@ -125,10 +125,12 @@ body, html {
 
 .data-table tbody tr:nth-child(odd) {
     background-color: #DEF2F1; /* Màu nền hàng lẻ */
+    cursor: pointer; /* Biến con trỏ chuột thành hình bàn tay */
 }
 
 .data-table tbody tr:nth-child(even) {
     background-color: #DEF2F1; /* Màu nền hàng chẵn */
+    cursor: pointer; /* Biến con trỏ chuột thành hình bàn tay */
 }
 
 .data-table tbody tr td {
@@ -260,9 +262,9 @@ body, html {
 
 .input-container3 {
     position: absolute;
-    left: 813.67px;
+    left: 750px; /* Điều chỉnh vị trí của input-container3 */
     top: 971px;
-    width: 147.83px;
+    width: 200px; /* Mở rộng chiều rộng của input-container3 */
     height: 33.74px;
     border-radius: 12px;
     background-color: #FFF9F9;
@@ -527,6 +529,9 @@ body, html {
     border-bottom-right-radius: 33px;
 }
 
+.data-table tbody tr:hover {
+    cursor: pointer; /* Biến con trỏ chuột thành hình bàn tay */
+}
 
 
 
